@@ -1,0 +1,20 @@
+Schematic location of all the transistors (not to scale)
+
+
+                    QX18             Q1                   QX12                                           QX1
+                          QX17 QX16     QX15    QX14 QX13      QX11 QX10 QX9 QX8 QX7 QX6 QX5 QX4 QX3 QX2
+
+                Q14 Q8 Q2          Q7 Q13
+
+QX21 QX20 QX19
+
+                Q15 Q9 Q3                   USB
+
+                +-------+
+		Bluetooth  Q4 Q10 Q16
+		module? |
+                |       |           +---+
+                |       |           |MCU|
+                |       |  Q11      +---+
+		|	|  Q17
+		+-------+                        Q5 Q6 Q12 Q18
