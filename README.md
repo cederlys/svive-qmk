@@ -93,7 +93,7 @@ Compiling firmware
 
 * Set it up:
 
-    qmk setup -b sn32_master_openrgb cederlys/qmk_firmware
+    qmk setup -b svive-tritium-full-1 cederlys/qmk_firmware
 
   This will create ~/qmk_firmware and install some things in the venv.
 
