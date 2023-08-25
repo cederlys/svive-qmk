@@ -41,6 +41,41 @@ I've already done it for you.  The result is in svive.matrix.  Q.txt
 may also be helpful if you need to locate the transistors, labeled Qnn
 or QXnn on the PCB.
 
+Disassembling the keyboard
+==========================
+
+* Remove 3 screws from the underside of the keyboard.
+
+* Gently remove the top cover by pulling the front and back away from
+  the rest of the keyboard.
+
+* Remove at least the following keycaps to get access to several small
+  screws:
+
+    F3 F4 F6 F7 F10 F11 ScrLk Pause
+    TAB W R U I Å ^ DEL END
+    CapsLock D J Ä
+    LeftCtrl < Space AltGr Menu RightCtrl Down Right
+    Numpad keys: * - + Enter 0 .
+
+* Remove the screws.
+
+* Gently lift the PCB a short bit.  Remove the USB cable from the
+  base.  Lift the PCB and turn it over.
+
+  You now have access to the bottom of the PCB.  If all you needed was
+  to unbrick it, short the BOOT and GND pins (see dump-st-link.png)
+  and plug in the USB cable.
+
+  However, if you want access to the other side of the PCB, continue below:
+
+* Remove all the keycaps and switches.  (Use the supplied tool.  The
+  switches are hotpluggable, so you can simply lift them.)
+
+* Remove 8 screws from the PCB.
+
+* Gently remove the PCB from the steel plate.
+
 Compiling firmware
 ==================
 
