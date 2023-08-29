@@ -53,9 +53,9 @@ Disassembling the keyboard
   screws:
 
     F3 F4 F6 F7 F10 F11 ScrLk Pause
-    TAB W R U I Å ^ DEL END
+    TAB E R U I Å ^ DEL END
     CapsLock D J Ä
-    LeftCtrl < Space AltGr Menu RightCtrl Down Right
+    LeftCtrl Fn Space AltGr Menu RightCtrl Down Right
     Numpad keys: * - + Enter 0 .
 
 * Remove the screws.
