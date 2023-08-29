@@ -107,9 +107,13 @@ Flashing
   compiled.
 
 * To revert to stock firmware, press "Revert to Stock Firmware", and
-  select the firmware you downloaded.  (FULBLK00321250481.bin is the
-  stock firmware from the Svive Tritium Full with that serial number;
-  similar for FULBLK00422090684.bin.)
+  select the firmware you downloaded.  Included are four stock
+  firmwares I've dumped:
+
+    FULBLK00321250481.bin (remap was needed)
+    FULBLK00321250740.bin (contains a real SN32F248BFG!)
+    FULBLK00422090684.bin
+    FULBLK00422090686.bin
 
 Controlling the LED:s
 =====================
