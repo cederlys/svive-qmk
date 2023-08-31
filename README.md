@@ -136,6 +136,9 @@ Flashing
     . ~/.venv/sonix-flasher/bin/activate
 ```
 
+* Change `hidapi==0.9.0.post2` to `hidapi==0.14.0` in
+  `requirements.txt`.  Otherwise, it won't compile on a modern system.
+
 * Install requirements:
 
 ```
