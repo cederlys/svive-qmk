@@ -7,25 +7,29 @@ Dumping the stock firmware
   dump-st-link.png.  Connect BOOT to GND.  Connect the rest to the
   ST-LINK:
 
+```
     Kbd	    ST-LINK v2
 
     VCC   - 3.3V
     GND   - GND
     SWCLK - SWCLK
     SWDIO - SWDIO
+```
 
 * Install OpenOCD
 
-    apt-get install openocd
+    ```apt-get install openocd```
 
 * Get some scripts:
 
-    git clone git@github.com:gloryhzw/qmk_tool.git
+    ```git clone git@github.com:gloryhzw/qmk_tool.git```
 
 * Start openocd:
 
+```
     cd qmk_tool/firmware
     openocd -f stlink.cfg -f sonix.cfg
+```
 
  * Follow the instructions in DumpTutorial.md, which I found on the
    SonixQMK Discord server.  It allegedy exists on some Wiki as well,
@@ -52,11 +56,13 @@ Disassembling the keyboard
 * Remove at least the following keycaps to get access to several small
   screws:
 
+```
     F3 F4 F6 F7 F10 F11 ScrLk Pause
     TAB E R U I Å ^ DEL END
     CapsLock D J Ä
     LeftCtrl Fn Space AltGr Menu RightCtrl Down Right
     Numpad keys: * - + Enter 0 .
+```
 
 * Remove the screws.
 
@@ -81,25 +87,34 @@ Compiling firmware
 
 * Create a venv for SviveQMK:
 
+```
     python3 -m venv ~/.venv/svive-qmk
-
+```
 * Activate it:
 
+```
     . ~/.venv/svive-qmk/bin/activate
+```
 
 * Install qmk:
 
+```
     python3 -m pip install qmk
+```
 
 * Set it up:
 
+```
     qmk setup -b svive-tritium-full-1 cederlys/qmk_firmware
+```
 
-  This will create ~/qmk_firmware and install some things in the venv.
+  This will create `~/qmk_firmware` and install some things in the venv.
 
 * Compile:
 
+```
     qmk compile -kb svive/tritium_full -km default
+```
 
   or, with swapped Fn and Win keys:
 
@@ -110,25 +125,33 @@ Flashing
 
 * Get the flasher:
 
+```
     git clone git@github.com:SonixQMK/sonix-flasher.git
+```
 
 * Create and activate a new venv (you can't share it with qmk!):
 
+```
     python3 -m venv ~/.venv/sonix-flasher
     . ~/.venv/sonix-flasher/bin/activate
+```
 
 * Install requirements:
 
+```
     cd ~/rgit/sonix-flasher
     pip install wheel
     pip install -r requirements.txt
+```
 
 * Run it:
 
+```
     cd ~/rgit/sonix-flasher
     sudo -s
     . ~ceder/.venv/sonix-flasher/bin/activate
     fbs run
+```
 
 * From stock firmware, use "Reboot to Bootloader [HFD]" to reach the
   bootloader.  From the QMK firmware, press Fn-ESC to reach the
@@ -151,9 +174,11 @@ Install OpenRGB.
 
 Add this udev rule:
 
+```
 echo 'SUBSYSTEMS=="usb|hidraw", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="8006", TAG+="uaccess", TAG+="Svive_Tritium_Full"' > /usr/lib/udev/rules.d/60-openrgb-svive.rules
+```
 
-Start openrgb.  Find "Settings" => "OpenRGB QMK Protocol".  Press
-"Add".  Enter USB VID (0c45) and USB PID (8006).  Restart openrgb.
+Start openrgb.  Find `Settings` => `OpenRGB QMK Protocol`.  Press
+`Add`.  Enter USB VID (0c45) and USB PID (8006).  Restart openrgb.
 
 Now, you should find the keyboard in openrgb.
