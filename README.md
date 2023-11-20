@@ -107,13 +107,14 @@ Flashing
   compiled.
 
 * To revert to stock firmware, press "Revert to Stock Firmware", and
-  select the firmware you downloaded.  Included are four stock
+  select the firmware you downloaded.  Included are five stock
   firmwares I've dumped:
 
-    FULBLK00321250481.bin (remap was needed)
-    FULBLK00321250740.bin (contains a real SN32F248BFG!)
-    FULBLK00422090684.bin
-    FULBLK00422090686.bin
+    FULBLK00321250481.bin (Triton Full) (remap was needed)
+    FULBLK00321250740.bin (Triton Full) (contains a real SN32F248BFG!)
+    FULBLK00422090684.bin (Triton Full)
+    FULBLK00422090686.bin (Triton Full)
+    60BLKG00321200502.bin (Triton 60%) (remap was needed)
 
 Controlling the LED:s
 =====================
