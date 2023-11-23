@@ -1,4 +1,5 @@
-Schematic location of all the transistors (not to scale)
+Schematic location of all the transistors (not to scale) for a Svive
+Triton Full:
 
 
                     QX18             Q1                   QX12                                           QX1
@@ -18,3 +19,18 @@ QX21 QX20 QX19
                 |       |  Q11      +---+
 		|	|  Q17
 		+-------+                        Q5 Q6 Q12 Q18
+
+The same, for a Svive Triton Mini (also known as Svive Triton 60%):
+
+
+Q15     QX14     QX13   QX12  QX11 QX10 QX9 USB-C   QX7  QX6    QX5    QX4    QX3    QX2   QX1
+Q9      Q14   Q8  Q2                           QX8                                   Q16 Q10 Q4
+Q3	      	  			       					     	       Q18
+											       Q12
+										 Q17	       Q6
+										 Q11
+										 Q5
+
+				     +----------+	       +---+
+				     |BT module?|	       |MCU|
+				     +----------+  oooo BooT   +---+

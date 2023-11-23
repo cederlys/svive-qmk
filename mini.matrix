@@ -1,0 +1,124 @@
+KBD Rows:
+
+63 P3.11 ESC-1-2-3-4-5-6-7-8-9-0-+-`-BackSpace
+62 P3.10 Tab-qwertyuiop-å-^
+61 P3.9  CapsLk-asdfghjklöä'-Ret
+60 P3.8  LShift-<-zxcvbnm,..---RShift
+59 P3.7  LCtrl-Win-LAlt-Space-AltGr-Menu-RCtrl-Fn
+
+KBD & LED Columns:
+
+25 P0.8  LCtrl-LShift-CapsLk-Tab-ESC
+26 P0.9  Win-<-A-Q-1
+27 P0.10 Alt-Z-S-W-2-F2
+28 P0.11 X-D-E-3
+29 P0.12 C-F-R-4
+30 P0.13 V-G-T-5
+31 P0.14 Space-B-H-Y-6
+32 P0.15 N-J-U-7
+34 P1.0  M-K-I-8
+35 P1.1  AltGr-,-L-O-9
+36 P1.2  Menu-.-Ö-P-0
+37 P1.3  RCtrl----ä-å-+
+38 P1.4  Rshift-'-~-`
+39 P1.5  Fn-Ret-BackSpace
+
+Bottom row reverse layout:
+
+FN RCtlr Menu AltGr Space Alt Win LCtrl
+
+LED Rows
+
+ +--XX--G
+ B--XX--R
+
+See also "Default configuration example" in
+qmk_firmware/drivers/led/sn32/rgb_matrix_sn32f24xb.c
+
+48 P1.14 Q6  (NPN) B: LCtrl-Win-LAlt-Space-AltGr-Menu-RCtrl-Fn
+49 P1.15 Q12 (NPN) G: LCtrl-Win-LAlt-Space-AltGr-Menu-RCtrl-Fn
+50 P3.3  Q18 (NPN) R: LCtrl-Win-LAlt-Space-AltGr-Menu-RCtrl-Fn
+
+47 P1.13 Q5  (NPN) B: LShift-<-zxcvbnm,..---RShift
+15 P2.14 Q11 (NPN) G: LShift-<-zxcvbnm,..---RShift
+14 P2.13 Q17 (NPN) R: LShift-<-zxcvbnm,..---RShift
+
+13 P2.12 Q4  (NPN) B: CapsLk-asdfghjklöä'-Ret
+12 P2.11 Q10 (NPN) G: CapsLk-asdfghjklöä'-Ret
+11 P2.10 Q16 (NPN) R: CapsLk-asdfghjklöä'-Ret
+
+10 P2.9 Q3  (NPN) B: Tab-q..p-å-~
+ 9 P2.8 Q9  (NPN) G: Tab-q..p-å-~
+ 8 P2.7 Q15 (NPN) R: Tab-q..p-å-~
+
+ 7 P2.6  Q2  (NPN) B: Esc-1..9-0-+-`-Backspace
+ 6 P2.5  Q8  (NPN) G: Esc-1..9-0-+-`-Backspace
+ 5 P2.4  Q14 (NPN) R: Esc-1..9-0-+-`-Backspace
+
+Pins:
+
+ 1 P2.0 (unused)
+ 2 P2.1 (unused)
+ 3 BOOT
+ 4 P2.3 (unused)
+ 5 P2.4  LED ROW Q14 (NPN) R: Esc-1..9-0-+-`-Backspace
+ 6 P2.5  LED ROW Q8  (NPN) G: Esc-1..9-0-+-`-Backspace
+ 7 P2.6  LED ROW Q2  (NPN) B: Esc-1..9-0-+-`-Backspace
+ 8 P2.7  LED ROW Q15 (NPN) R: Tab-q..p-å-~
+ 9 P2.8  LED ROW Q9  (NPN) G: Tab-q..p-å-~
+10 P2.9  LED ROW Q3  (NPN) B: Tab-q..p-å-~
+11 P2.10 LED ROW Q16 (NPN) R: CapsLk-asdfghjklöä'-Ret
+12 P2.11 LED ROW Q10 (NPN) G: CapsLk-asdfghjklöä'-Ret
+13 P2.12 LED ROW Q4  (NPN) B: CapsLk-asdfghjklöä'-Ret
+14 P2.13 LED ROW Q17 (NPN) R: LShift-<-zxcvbnm,..---RShift
+15 P2.14 LED ROW Q11 (NPN) G: LShift-<-zxcvbnm,..---RShift
+16 VDDIO1
+17 P0.0 (unused)
+18 P0.1 (unused)
+19 P0.2 (unused)
+20 P0.3 (unused)
+21 P0.4 (unused)
+22 P0.5 (unused)
+23 P0.6 (unused)
+24 P0.7 (unused)
+25 P0.8  COL LCtrl-LShift-CapsLk-Tab-ESC
+26 P0.9  COL Win-<-A-Q-1
+27 P0.10 COL Alt-Z-S-W-2-F2
+28 P0.11 COL X-D-E-3
+29 P0.12 COL C-F-R-4
+30 P0.13 COL V-G-T-5
+31 P0.14 COL Space-B-H-Y-6
+32 P0.15 COL N-J-U-7
+33 VDD
+34 P1.0  COL M-K-I-8
+35 P1.1  COL AltGr-,-L-O-9
+36 P1.2  COL Menu-.-Ö-P-0
+37 P1.3  COL RCtrl----ä-å-+
+38 P1.4  COL Rshift-'-~-`
+39 P1.5  COL Fn-Ret-BackSpace
+40 P1.6  (unused)
+41 P1.7  (unused)
+42 P1.8  (unused)
+43 P1.9  (unused)
+44 P1.10 (unused)
+45 P1.11 (unused)
+46 P1.12 (unused)
+47 P1.13 LED ROW Q5  (NPN) B: LShift-<-zxcvbnm,..---RShift
+48 P1.14 LED ROW Q6  (NPN) B: LCtrl-Win-LAlt-Space-AltGr-Menu-RCtrl-Fn
+49 P1.15 LED ROW Q12 (NPN) G: LCtrl-Win-LAlt-Space-AltGr-Menu-RCtrl-Fn
+50 P3.3  LED ROW Q18 (NPN) R: LCtrl-Win-LAlt-Space-AltGr-Menu-RCtrl-Fn
+51 P3.4  (unused)
+52 D+
+53 D-
+54 VREG33
+55 VDD
+56 VSS
+57 P3.5 (unused)
+57 SWDIO
+58 P3.6 (unused)
+58 SWCLK
+59 P3.7  KBD ROW LCtrl-Win-LAlt-Space-AltGr-Menu-RCtrl-Fn
+60 P3.8  KBD ROW LShift-<-zxcvbnm,..---RShift
+61 P3.9  KBD ROW CapsLk-asdfghjklöä'-Ret
+62 P3.10 KBD ROW Tab-qwertyuiop-å-^
+63 P3.11 KBD ROW ESC-1-2-3-4-5-6-7-8-9-0-+-`-BackSpace

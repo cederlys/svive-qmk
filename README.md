@@ -1,11 +1,107 @@
+Svive Triton / Svive Tritium
+============================
+
+Svive has a range of mechanical keyboards.  At least two of them
+contain an HFD2201KBA MCU, which is compatible with the Sonix
+SN32F248B MCU.  (Actually, of the 5 Svive keyboards I have, 4 contains
+a HFD2201KBA and one contain a SN32F248B.  That is how compatible
+these chips are.)
+
+I've installed a fork of SonixQMK on two of these keyboards: the
+Triton Full and the Triton Mini (also known as Triton 60%).
+
+Fullsize
+--------
+
+My first Svive keyboard was a fullsize keyboard with 105 keys and a
+Nordic ISO layout.  It has hotpluggable switches.  This keyboard goes
+by many names.
+
+What I ordered from Webhallen:
+
+```
+Svive Triton Pro RGB Tangentbord (Red) - Svart
+```
+
+What the box says:
+
+```
+Svive Tritium Full Mechanical RGB Gaming Keyboard
+```
+
+What the included leaflet say:
+
+```
+Svive Tritium Full Mechanical Gaming Keyboard
+Svive Tritium Full
+Tritium RGB
+Tritium Full
+```
+
+What the svive.gg website says:
+
+```
+Triton Full
+Triton Pro Full
+```
+
+I'm going to call this keyboard "Triton Full".
+
+Mini
+----
+
+This is basically the same keyboard as Triton Full, with a lot of keys
+removed.  There is no numpad, no cursor keys, no function keys, and no
+Ins/Del/PrtSc/Pause, et c.  Only the 62 most central keys remain.
+This has a Nordic ISO layout.
+
+On this keyboard, the switches are soldered to the PCB, so changing
+them (or removing them to see what is under them) is a lot harder than
+on the Triton Full.
+
+This keyboard also goes by many names.
+
+What I ordered from Webhallen:
+
+```
+Svive Triton RGB Mini 60 (Red) - Grå
+```
+
+What the box says:
+
+```
+Svive Tritium 60% Mechanical RGB Gaming Keyboard
+```
+
+What the included leaflet say:
+
+```
+Svive Tritium Mini Mechanical RGB Gaming Keyboard
+Svive Tritium Mini
+Tritium Mini RGB
+Tritium Mini
+```
+
+(The leaflet also claims it has 61 keys, but I count 62.)
+
+What the svive.gg website says:
+
+```
+Triton Mini
+```
+
+I'm going to call this keyboard "Triton Mini".
+
+
 Dumping the stock firmware
 ==========================
 
 * Buy an ST-LINK v2
 
 * Solder som leads to the relevant test points on the PCB.  See
-  dump-st-link.png.  Connect BOOT to GND.  Connect the rest to the
-  ST-LINK:
+  dump-st-link.png for Triton Full, and dump-st-link-mini.png for
+  Triton Mini.  Make sure the USB cable is unplugged.  Connect BOOT to
+  GND.  Connect the rest to the ST-LINK:
 
 ```
     Kbd	    ST-LINK v2
@@ -58,9 +154,12 @@ Dumping the stock firmware
 Reverse engineering the keyboard
 ================================
 
-I've already done it for you.  The result is in svive.matrix.  Q.txt
-may also be helpful if you need to locate the transistors, labeled Qnn
-or QXnn on the PCB.
+I've already done it for you.  The result is in full.matrix and
+mini.matrix.  Q.txt may also be helpful if you need to locate the
+transistors, labeled Qnn or QXnn on the PCB.
+
+The behaviour of the Triton Mini keyboard using the stock firmware is
+documented in mini.stock-keycodes.txt.
 
 To see the pinout of the MCU, run
 
@@ -68,11 +167,13 @@ To see the pinout of the MCU, run
 
 and look at docs/MCU chip/SN32F240B_V1.9_EN.pdf.
 
-These keyboards contain a HFD2201KBA or SN32F248B MCU.  They are
+These keyboards contain a HFD2201KBA or SN32F248B MCU.  The MCUs are
 compatible.
 
 Disassembling the keyboard
 ==========================
+
+These instructions apply to the Triton Full:
 
 * Remove 3 screws from the underside of the keyboard.
 
@@ -107,6 +208,19 @@ Disassembling the keyboard
 * Remove 8 screws from the PCB.
 
 * Gently remove the PCB from the steel plate.
+
+The Triton Mini is very different:
+
+* Remove four screws from the underside.
+
+* Gently turn the keyboard upside-down.  The keyboard will fall out of
+  the plastic case.
+
+  You now have access to the bottom of the PCB.
+
+But to unbrick the keyboard, you don't even need to do this much.
+Just remove the space keycap, and you will be able to access the BOOT
+and GND pins.
 
 Compiling firmware
 ==================
@@ -202,8 +316,8 @@ index 93ea466..c35de51 100644
   bootloader.  In all cases, you can also short the BOOT pin and GND
   while plugging in the keyboard.
 
-* Select SN32F24x.  Select QMK offset 0x00.  This keyboard should not
-  use a jumploader.
+* Select SN32F24x.  Select QMK offset 0x00.  These keyboards should
+  not use a jumploader.
 
 * To install QMK: Press "Flash QMK...", and select the firmware you
   compiled.

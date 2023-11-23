@@ -1,0 +1,182 @@
+KBD Rows:
+
+64 P2.15 ESC-F1-F2-F3-F4-F5-F6-F7-F8-F9-F10-F11-F12-PrtSC-ScrLk-Pause
+63 P3.11 §-1-2-3-4-5-6-7-8-9-0-+-`-BackSpace-Ins-Home-PgUp-NumLk-KpDiv-KpMul-KpNeg
+62 P3.10 Tab-qwertyuiop-å-^-Del-End-PgDn-Kp7-Kp8-Kp9-KpPlus
+61 P3.9  CapsLk-asdfghjklöä'-Ret-Kp4-Kp5-Kp6
+60 P3.8  LShift-<-zxcvbnm,..---RShift-Up-Kp1-Kp2-Kp3-KpEnter
+59 P3.7  LCtrl-Win-LAlt-Space-AltGr-Fn-Menu-RCtrl-Left-Down-Right-Kp0-KpDel
+
+KBD Columns:
+
+25 P0.8  LCtrl-LShift-CapsLk-Tab-§-ESC
+26 P0.9  Win-<-A-Q-1-F1
+27 P0.10 Alt-Z-S-W-2-F2
+28 P0.11 X-D-E-3-F3
+29 P0.12 C-F-R-4-F4
+30 P0.13 V-G-T-5-F5
+31 P0.14 Space-B-H-Y-6-F6
+32 P0.15 N-J-U-7-F7
+34 P1.0  M-K-I-8-F8
+35 P1.1  ,-L-O-9-F9
+36 P1.2  AltGr-.-Ö-P-0-F10
+37 P1.3  Fn---Ä-Å-+-F11
+38 P1.4  Win-'-~-`-F12
+39 P1.5  RCtrl-Rshift-Ret-BackSpace
+40 P1.6  Left-Del-Ins-PrtSc
+41 P1.7  Down-up-End-Home-ScrLk
+42 P1.8  Right-PgDn-PgUp-Pause
+43 P1.9  Kp1-Kp4-Kp7-NumLk
+44 P1.10 Kp0-Kp2-Kp5-Kp8-KpDiv
+45 P1.11 KpDel-Kp3-Kp6-Kp9-KpMul
+46 P1.12 KpEnter-KpPlus-KpNeg
+
+---
+
+LED Columns
+
+25 P0.8  QX1 (PNP) ESC-§-Tab-CapsLk-LShift-LCtrl
+26 P0.9  QX2 (PNP) F1-1-Q-A-<-Win
+27 P0.10 QX3 (PNP) F2-2-w-s-z-LAlt
+28 P0.11 QX4 (PNP) F3-3-e-d-x
+29 P0.12 QX5 (PNP) F4-4-r-f-c
+30 P0.13 QX6 (PNP) F5-5-t-g-v
+31 P0.14 QX7 (PNP) F6-6-y-h-b-Space
+32 P0.15 QX8 (PNP) F7-7-u-j-n
+34 P1.0  QX9 (PNP) F8-8-i-k-m
+35 P1.1  QX10 (PNP) F9-9-o-l-,
+36 P1.2  QX11 (PNP) F10-0-p-ö-.-AltGr
+37 P1.3  QX12 (PNP) F11-+-å-ä---Fn
+38 P1.4  QX13 (PNP) F12-`-~-'-Menu
+39 P.15  QX14 (PNP) Backspace-Enter-Rshift-RCtrl
+40 P1.6  QX15 (PNP) PrtSc-Ins-Del-Left
+41 P1.7  QX16 (PNP) ScrLk-Home-End-Up-Down
+42 P1.8  QX17 (PNP) Pause-PgUp-PgDown-Right
+43 P1.9  QX18 (PNP) NumLk-Kp7-Kp4-Kp1
+44 P1.10 QX19 (PNP) KpDiv-Kp8-Kp5-Kp2-Kp0
+45 P1.11 QX20 (PNP) KpMul-Kp9-Kp6-Kp3-KpDel
+46 P1.12 QX21 (PNP) KpMinus-KpPlus-KpEnter
+
+LED Rows
+
+ +--XX--G
+ B--XX--R
+
+ 4 P2.3  Q1 (NPN) R: Escape-F1..F12-PrtSc-ScrLk-Pause
+ 7 P2.6  Q2 (NPN) R: Esc-1..9-0-+-`-Backspace-Ins-Home-PgUp-NumLk-KpDiv-KpMul-KpSub
+10 P2.9 Q3 (NPN) R: Tab-q..p-å-~-Del-End-PgDn-Kp7-Kp8-Kp9-KpPlus
+13 P2.12 Q4 (NPN) R: CapsLk-asdfghjklöä'-Ret-Kp4-Kp5-Kp6
+47 P1.13 Q5 (NPN) R: LShift-<-zxcvbnm,..---RShift-Up-Kp1-Kp2-Kp3-KpEnter
+48 P1.14 Q6 (NPN) R: LCtrl-Win-LAlt-Space-AltGr-Fn-Menu-RCtrl-Left-Down-Right-Kp0-KpDel
+
+ 2 P2.1  Q7 (NPN) B: Escape-F1..F12-PrtSc-ScrLk-Pause
+ 6 P2.5  Q8 (NPN) B: Esc-1..9-0-+-`-Backspace-Ins-Home-PgUp-NumLk-KpDiv-KpMul-KpSub
+ 9 P2.8  Q9 (NPN) B: Tab-q..p-å-~-Del-End-PgDn-Kp7-Kp8-Kp9-KpPlus
+12 P2.11 Q10 (NPN) B: CapsLk-asdfghjklöä'-Ret-Kp4-Kp5-Kp6
+15 P2.14 Q11 (NPN) B: LShift-<-zxcvbnm,..---RShift-Up-Kp1-Kp2-Kp3-KpEnter
+49 P1.15 Q12 (NPN) B: LCtrl-Win-LAlt-Space-AltGr-Fn-Menu-RCtrl-Left-Down-Right-Kp0-KpDel
+
+ 1 P2.0  Q13 (NPN) G: Escape-F1..F12-PrtSc-ScrLk-Pause
+ 5 P2.4  Q14 (NPN) G: Esc-1..9-0-+-`-Backspace-Ins-Home-PgUp-NumLk-KpDiv-KpMul-KpSub
+ 8 P2.7  Q15 (NPN) G: Tab-q..p-å-~-Del-End-PgDn-Kp7-Kp8-Kp9-KpPlus
+11 P2.10 Q16 (NPN) G: CapsLk-asdfghjklöä'-Ret-Kp4-Kp5-Kp6
+14 P2.13 Q17 (NPN) G: LShift-<-zxcvbnm,..---RShift-Up-Kp1-Kp2-Kp3-KpEnter
+50 P3.3  Q18 (NPN) G: LCtrl-Win-LAlt-Space-AltGr-Fn-Menu-RCtrl-Left-Down-Right-Kp0-KpDel
+
+Direct Drive LEDs:
+
+58 P3.6 LED Win (active high)
+57 P3.5 LED ScrLck (active high)
+24 P0.7 LED Caps Lock
+23 P0.6 LED Num Lock
+
+
+Pins:
+
+ 1 P2.0  LED ROW Q13 (NPN) G: Escape-F1..F12-PrtSc-ScrLk-Pause
+ 2 P2.1  LED ROW Q7 (NPN) B: Escape-F1..F12-PrtSc-ScrLk-Pause
+ 3 BOOT
+ 4 P2.3  LED ROW Q1 (NPN) R: Escape-F1..F12-PrtSc-ScrLk-Pause
+ 5 P2.4  LED ROW Q14 (NPN) G: Esc-1..9-0-+-`-Backspace-Ins-Home-PgUp-NumLk-KpDiv-KpMul-KpSub
+ 6 P2.5  LED ROW Q8 (NPN) B: Esc-1..9-0-+-`-Backspace-Ins-Home-PgUp-NumLk-KpDiv-KpMul-KpSub
+ 7 P2.6  LED ROW Q2 (NPN) R: Esc-1..9-0-+-`-Backspace-Ins-Home-PgUp-NumLk-KpDiv-KpMul-KpSub
+ 8 P2.7  LED ROW Q15 (NPN) G: Tab-q..p-å-~-Del-End-PgDn-Kp7-Kp8-Kp9-KpPlus
+ 9 P2.8  LED ROW Q9 (NPN) B: Tab-q..p-å-~-Del-End-PgDn-Kp7-Kp8-Kp9-KpPlus
+10 P2.9  LED ROW Q3 (NPN) R: Tab-q..p-å-~-Del-End-PgDn-Kp7-Kp8-Kp9-KpPlus
+11 P2.10 LED ROW Q16 (NPN) G: CapsLk-asdfghjklöä'-Ret-Kp4-Kp5-Kp6
+12 P2.11 LED ROW Q10 (NPN) B: CapsLk-asdfghjklöä'-Ret-Kp4-Kp5-Kp6
+13 P2.12 LED ROW Q4 (NPN) R: CapsLk-asdfghjklöä'-Ret-Kp4-Kp5-Kp6
+14 P2.13 LED ROW Q17 (NPN) G: LShift-<-zxcvbnm,..---RShift-Up-Kp1-Kp2-Kp3-KpEnter
+15 P2.14 LED ROW Q11 (NPN) B: LShift-<-zxcvbnm,..---RShift-Up-Kp1-Kp2-Kp3-KpEnter
+16 VDDIO1
+17 P0.0 (unused)
+18 P0.1 (unused)
+19 P0.2 (unused)
+20 P0.3 (unused)
+21 P0.4 (unused)
+22 P0.5 (unused)
+23 P0.6  LED (direct) Num Lock
+24 P0.7  LED (direct) Caps Lock
+25 P0.8  KBD COL LCtrl-LShift-CapsLk-Tab-§-ESC
+25 P0.8  LED COL QX1 (PNP) ESC-§-Tab-CapsLk-LShift-LCtrl
+26 P0.9  KBD COL Win-<-A-Q-1-F1
+26 P0.9  LED COL QX2 (PNP) F1-1-Q-A-<-Win
+27 P0.10 KBD COL Alt-Z-S-W-2-F2
+27 P0.10 LED COL QX3 (PNP) F2-2-w-s-z-LAlt
+28 P0.11 KBD COL X-D-E-3-F3
+28 P0.11 LED COL QX4 (PNP) F3-3-e-d-x
+29 P0.12 KBD COL C-F-R-4-F4
+29 P0.12 LED COL QX5 (PNP) F4-4-r-f-c
+30 P0.13 KBD COL V-G-T-5-F5
+30 P0.13 LED COL QX6 (PNP) F5-5-t-g-v
+31 P0.14 KBD COL Space-B-H-Y-6-F6
+31 P0.14 LED COL QX7 (PNP) F6-6-y-h-b-Space
+32 P0.15 KBD COL N-J-U-7-F7
+32 P0.15 LED COL QX8 (PNP) F7-7-u-j-n
+33 VDD
+34 P1.0  KBD COL M-K-I-8-F8
+34 P1.0  LED COL QX9 (PNP) F8-8-i-k-m
+35 P1.1  KBD COL ,-L-O-9-F9
+35 P1.1  LED COL QX10 (PNP) F9-9-o-l-,
+36 P1.2  KBD COL AltGr-.-Ö-P-0-F10
+36 P1.2  LED COL QX11 (PNP) F10-0-p-ö-.-AltGr
+37 P1.3  KBD COL Fn---Ä-Å-+-F11
+37 P1.3  LED COL QX12 (PNP) F11-+-å-ä---Fn
+38 P1.4  KBD COL Win-'-~-`-F12
+38 P1.4  LED COL QX13 (PNP) F12-`-~-'-Menu
+39 P.15  LED COL QX14 (PNP) Backspace-Enter-Rshift-RCtrl
+39 P1.5  KBD COL RCtrl-Rshift-Ret-Del
+40 P1.6  KBD COL Left-Del-Ins-PrtSc
+40 P1.6  LED COL QX15 (PNP) PrtSc-Ins-Del-Left
+41 P1.7  KBD COL Down-up-End-Home-ScrLk
+41 P1.7  LED COL QX16 (PNP) ScrLk-Home-End-Up-Down
+42 P1.8  KBD COL Right-PgDn-PgUp-Pause
+42 P1.8  LED COL QX17 (PNP) Pause-PgUp-PgDown-Right
+43 P1.9  KBD COL Kp1-Kp4-Kp7-NumLk
+43 P1.9  LED COL QX18 (PNP) NumLk-Kp7-Kp4-Kp1
+44 P1.10 KBD COL Kp0-Kp2-Kp5-Kp8-KpDiv
+44 P1.10 LED COL QX19 (PNP) KpDiv-Kp8-Kp5-Kp2-Kp0
+45 P1.11 KBD COL KpDel-Kp3-Kp6-Kp9-KpMul
+45 P1.11 LED COL QX20 (PNP) KpMul-Kp9-Kp6-Kp3-KpDel
+46 P1.12 KBD COL KpEnter-KpPlus-KpNeg
+46 P1.12 LED COL QX21 (PNP) KpMinus-KpPlus-KpEnter
+47 P1.13 LED ROW Q5 (NPN) R: LShift-<-zxcvbnm,..---RShift-Up-Kp1-Kp2-Kp3-KpEnter
+48 P1.14 LED ROW Q6 (NPN) R: LCtrl-Win-LAlt-Space-AltGr-Fn-Menu-RCtrl-Left-Down-Right-Kp0-KpDel
+49 P1.15 LED ROW Q12 (NPN) B: LCtrl-Win-LAlt-Space-AltGr-Fn-Menu-RCtrl-Left-Down-Right-Kp0-KpDel
+50 P3.3  LED ROW Q18 (NPN) G: LCtrl-Win-LAlt-Space-AltGr-Fn-Menu-RCtrl-Left-Down-Right-Kp0-KpDel
+51 P3.4  (unused)
+52 D+
+53 D-
+54 VREG33
+55 VDD
+56 VSS
+57 P3.5  LED (direct) ScrLck (active high)
+57 SWDIO
+58 P3.6  LED (direct) Win (active high)
+58 SWCLK
+59 P3.7  KBD ROW LCtrl-Win-LAlt-Space-AltGr-Fn-Menu-RCtrl-Left-Down-Right-Kp0-KpDel
+60 P3.8  KBD ROW LShift-<-zxcvbnm,..---RShift-Up-Kp1-Kp2-Kp3-KpEnter
+61 P3.9  KBD ROW CapsLk-asdfghjklöä'-Ret-Kp4-Kp5-Kp6
+62 P3.10 KBD ROW Tab-qwertyuiop-å-^-Del-End-PgDn-Kp7-Kp8-Kp9-KpPlus
+63 P3.11 KBD ROW §-1-2-3-4-5-6-7-8-9-0-+-`-BackSpace-Ins-Home-PgUp-NumLk-KpDiv-KpMul-KpNeg
+64 P2.15 KBD ROW ESC-F1-F2-F3-F4-F5-F6-F7-F8-F9-F10-F11-F12-PrtSC-ScrLk-Pause
