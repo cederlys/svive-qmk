@@ -36,7 +36,24 @@ Dumping the stock firmware
    but I can't find it.  Note that you need to edit the dump-memory.py
    in the middle of the process, after you have remapped the firmware
    flash.  Revert the change afterwards, in case you want to dump the
-   firmware from some other keyboard in the future.
+   firmware from some other keyboard in the future.  For you
+   convenience, here is a patch that performs the necessary edits:
+
+```
+--- dump-memory.py~	2023-08-24 23:22:38.810453463 +0200
++++ dump-memory.py	2023-11-20 00:00:37.107395829 +0100
+@@ -30,8 +30,8 @@
+     outf = open(args.file, "wb")
+ 
+     with Telnet(host, port) as tn:
+-        tn.read_until(b"> ")
+-        tn.write(b"reset halt\n")
++        # tn.read_until(b"> ")
++        # tn.write(b"reset halt\n")
+ 
+         for addr in range(args.start, args.start + args.size, 4):
+             tn.read_until(b"> ")
+```
 
 Reverse engineering the keyboard
 ================================
