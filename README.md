@@ -62,6 +62,15 @@ I've already done it for you.  The result is in svive.matrix.  Q.txt
 may also be helpful if you need to locate the transistors, labeled Qnn
 or QXnn on the PCB.
 
+To see the pinout of the MCU, run
+
+    git clone git@github.com:SonixQMK/Mechanical-Keyboard-Database.git
+
+and look at docs/MCU chip/SN32F240B_V1.9_EN.pdf.
+
+These keyboards contain a HFD2201KBA or SN32F248B MCU.  They are
+compatible.
+
 Disassembling the keyboard
 ==========================
 
