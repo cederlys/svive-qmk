@@ -136,8 +136,23 @@ Flashing
     . ~/.venv/sonix-flasher/bin/activate
 ```
 
-* Change `hidapi==0.9.0.post2` to `hidapi==0.14.0` in
-  `requirements.txt`.  Otherwise, it won't compile on a modern system.
+* Install this patch.  Otherwise, it won't compile on a modern system.
+
+```
+diff --git a/requirements.txt b/requirements.txt
+index 93ea466..c35de51 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,7 +1,7 @@
+ altgraph==0.17
+ fbs==0.8.6
+ future==0.18.2
+-hidapi==0.9.0.post2
++hidapi==0.14.0
+ macholib==1.14
+ pefile==2019.4.18
+ PyInstaller==3.4
+```
 
 * Install requirements:
 
