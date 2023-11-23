@@ -131,7 +131,7 @@ Compiling firmware
 * Set it up:
 
 ```
-    qmk setup -b svive-tritium-full-1 cederlys/qmk_firmware
+    qmk setup -b ceder/sn32_develop_openrgb/2 cederlys/qmk_firmware
 ```
 
   This will create `~/qmk_firmware` and install some things in the venv.
@@ -139,12 +139,12 @@ Compiling firmware
 * Compile:
 
 ```
-    qmk compile -kb svive/tritium_full -km default
+    qmk compile -kb svive/triton_full -km default
 ```
 
   or, with swapped Fn and Win keys:
 
-    qmk compile -kb svive/tritium_full -km ceder
+    qmk compile -kb svive/triton_full -km ceder
 
 Flashing
 ========
