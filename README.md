@@ -55,6 +55,13 @@ removed.  There is no numpad, no cursor keys, no function keys, and no
 Ins/Del/PrtSc/Pause, et c.  Only the 62 most central keys remain.
 This has a Nordic ISO layout.
 
+WARNING: There are at least two revisions of this keyboard.  If you
+remove the space key, you can see a date code.  My keyboard has the
+date code 2020/12/19.  I've heard a report that newer keyboards have
+changed something, so that my firmware does not work on them.  In
+particular, keyboards with a date code 2021/07/08 apparently do not
+work; it is currently not known why.
+
 On this keyboard, the switches are soldered to the PCB, so changing
 them (or removing them to see what is under them) is a lot harder than
 on the Triton Full.
